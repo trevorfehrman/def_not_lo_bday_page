@@ -54,8 +54,9 @@ const BieberBox = styled.div`
 	p {
 		color: white;
 		position: absolute;
+		font-size: 2.5rem;
 		top: 60rem;
-		left: 5rem;
+		left: 3rem;
 	}
 `;
 
@@ -83,33 +84,33 @@ const Inner = styled.div`
 `;
 
 function App() {
-  //*this sets the increment
-  let options = {
-    throttle: 1000
-  };
+	//*this sets the increment
+	let options = {
+		throttle: 500
+	};
 
-  let position = useWindowScrollPosition(options);
-  console.log(position);
+	let position = useWindowScrollPosition(options);
+	console.log(position);
 
-  return (
-    <>
-      <Container>
-        <Inner>
-          <img className='message' src={message} />
-          <img className='lo' src={lo} />
-          <img className='trevor' src={me} />
-        </Inner>
-        <ReactHowler src={position.y > 1000 ? wdym : jp} playing={true} loop={true} />
-      </Container>
-      <WhatHaveIDone>
-        <BieberBox>
-          <p>Birthday Girl --></p>
-          <img src={bieber} alt='biebz' className='bieber' />
-          <img src={lauren} alt='bday lo' className='satan' />
-        </BieberBox>
-      </WhatHaveIDone>
-    </>
-  );
+	return (
+		<>
+			<Container>
+				<Inner>
+					<img className="message" src={message} />
+					<img className="lo" src={lo} />
+					<img className="trevor" src={me} />
+				</Inner>
+				<ReactHowler src={position.y > 700 ? wdym : jp} playing={true} loop={true} />
+			</Container>
+			<WhatHaveIDone>
+				<BieberBox>
+					<p>Birthday Girl --></p>
+					<img src={bieber} alt="biebz" className="bieber" />
+					<img src={lauren} alt="bday lo" className="satan" />
+				</BieberBox>
+			</WhatHaveIDone>
+		</>
+	);
 }
 
 export default App;
