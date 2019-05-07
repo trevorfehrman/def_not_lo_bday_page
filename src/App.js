@@ -97,6 +97,7 @@ const Inner = styled.div`
 `;
 
 function App() {
+<<<<<<< HEAD
   //*this sets the increment
   let options = {
     throttle: 1000
@@ -132,6 +133,39 @@ function App() {
       </GirlPower>
     </>
   );
+=======
+	//*this sets the increment
+	let options = {
+		throttle: 1000
+	};
+
+	let position = useWindowScrollPosition(options);
+	console.log(position);
+
+	return (
+		<>
+			<Container>
+				<Inner>
+					<img className="message" src={message} />
+					<img className="lo" src={lo} />
+					<img className="trevor" src={me} />
+				</Inner>
+				<ReactHowler src={position.y > 700 ? wdym : jp} playing={true} loop={true} />
+			</Container>
+			<WhatHaveIDone>
+				<BieberBox>
+					<p>Birthday Girl --></p>
+					<img src={bieber} alt="biebz" className="bieber" />
+					<img src={lauren} alt="bday lo" className="satan" />
+				</BieberBox>
+			</WhatHaveIDone>
+			<GirlPower>
+				<p>Girl Rules --></p>
+				<img src={girlPower} alt="girlPower" />
+			</GirlPower>
+		</>
+	);
+>>>>>>> 468b2636c35b69b1dfb4f670ad4ba68e3bc43bdd
 }
 
 export default App;
