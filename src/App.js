@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import ReactHowler from 'react-howler';
 
@@ -8,9 +8,9 @@ import me from './assets/me.png';
 import message from './assets/bdaytext.png';
 import music from './assets/Jurassic Park - Main Theme.mp3';
 
-import bieber from './assets/satan_bday.png';
+import bieber from './assets/bieber.png';
 import stage from './assets/bg.jpeg';
-import lauren from './assets/lauren.png';
+import lauren from './assets/bday_lauren.png';
 
 const Container = styled.div`
 	height: 100vh;
@@ -45,16 +45,15 @@ const BieberBox = styled.div`
 	.satan {
 		position: absolute;
 		top: 30rem;
-		left: 2rem;
-		width: 25%;
-		height: 50%;
+		width: 35%;
+		height: 55%;
 	}
 
 	p {
 		color: white;
 		position: absolute;
-		top: 55rem;
-		left: 2.5rem;
+		top: 60rem;
+		left: 5rem;
 	}
 `;
 
