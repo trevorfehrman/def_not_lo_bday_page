@@ -11,6 +11,7 @@ import music from './assets/Jurassic Park - Main Theme.mp3';
 import bieber from './assets/bieber.png';
 import stage from './assets/bg.jpeg';
 import lauren from './assets/bday_lauren.png';
+import wdym from './assets/wutdoyumean.mp3';
 
 const Container = styled.div`
 	height: 100vh;
