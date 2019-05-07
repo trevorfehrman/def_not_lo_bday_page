@@ -14,6 +14,8 @@ import stage from './assets/bg.jpeg';
 import lauren from './assets/bday_lauren.png';
 import wdym from './assets/wutdoyumean.mp3';
 
+import girlPower from './assets/girlPower.png';
+
 const Container = styled.div`
 	height: 100vh;
 	width: 100vw;
@@ -24,6 +26,15 @@ const Container = styled.div`
 `;
 
 const WhatHaveIDone = styled.div`
+	height: 150vh;
+	width: 100vw;
+	background-image: url(${stage});
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+`;
+
+const GirlPower = styled.div`
 	height: 150vh;
 	width: 100vw;
 	background-image: url(${stage});
@@ -85,33 +96,37 @@ const Inner = styled.div`
 `;
 
 function App() {
-	//*this sets the increment
-	let options = {
-		throttle: 500
-	};
+  //*this sets the increment
+  let options = {
+    throttle: 1000
+  };
 
-	let position = useWindowScrollPosition(options);
-	console.log(position);
+  let position = useWindowScrollPosition(options);
+  console.log(position);
 
-	return (
-		<>
-			<Container>
-				<Inner>
-					<img className="message" src={message} />
-					<img className="lo" src={lo} />
-					<img className="trevor" src={me} />
-				</Inner>
-				<ReactHowler src={position.y > 700 ? wdym : jp} playing={true} loop={true} />
-			</Container>
-			<WhatHaveIDone>
-				<BieberBox>
-					<p>Birthday Girl --></p>
-					<img src={bieber} alt="biebz" className="bieber" />
-					<img src={lauren} alt="bday lo" className="satan" />
-				</BieberBox>
+  return (
+    <>
+      <Container>
+        <Inner>
+          <img className='message' src={message} />
+          <img className='lo' src={lo} />
+          <img className='trevor' src={me} />
+        </Inner>
+        <ReactHowler src={position.y > 1000 ? wdym : jp} playing={true} loop={true} />
+      </Container>
+      <WhatHaveIDone>
+        <BieberBox>
+          <p>Birthday Girl --></p>
+          <img src={bieber} alt='biebz' className='bieber' />
+          <img src={lauren} alt='bday lo' className='satan' />
+        </BieberBox>
 			</WhatHaveIDone>
-		</>
-	);
+			<GirlPower>
+          <p>Girl Rules --></p>
+          <img src={girlPower} alt='girlPower' />
+      </GirlPower>
+    </>
+  );
 }
 
 export default App;
