@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import ReactHowler from 'react-howler';
 
@@ -8,49 +8,99 @@ import me from './assets/me.png';
 import message from './assets/bdaytext.png';
 import music from './assets/Jurassic Park - Main Theme.mp3';
 
+import bieber from './assets/satan_bday.png';
+import stage from './assets/bg.jpeg';
+import lauren from './assets/lauren.png';
+
 const Container = styled.div`
-  height: 100vh;
-  width: 100vw;
-  background-image: url(${jungle});
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+	height: 100vh;
+	width: 100vw;
+	background-image: url(${jungle});
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+`;
+
+const WhatHaveIDone = styled.div`
+	height: 150vh;
+	width: 100vw;
+	background-image: url(${stage});
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+`;
+
+const BieberBox = styled.div`
+	display: flex;
+
+	.bieber {
+		position: absolute;
+		width: 50%;
+		height: auto;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.satan {
+		position: absolute;
+		top: 30rem;
+		left: 2rem;
+		width: 25%;
+		height: 50%;
+	}
+
+	p {
+		color: white;
+		position: absolute;
+		top: 55rem;
+		left: 2.5rem;
+	}
 `;
 
 const Inner = styled.div`
-  display: flex;
+	display: flex;
 
-  .trevor {
-    width: 75%;
-    height: 75%;
-    position: absolute;
-    right: 2rem;
-    bottom: 0;
-  }
+	.trevor {
+		width: 75%;
+		height: 75%;
+		position: absolute;
+		right: 2rem;
+		bottom: 0;
+	}
 
-  .lo {
-    position: absolute;
-    left: 4rem;
-    bottom: 0;
-  }
+	.lo {
+		position: absolute;
+		left: 4rem;
+		bottom: 0;
+	}
 
-  .message {
-    position: relative;
-    top: -40rem;
-  }
+	.message {
+		position: relative;
+		top: -40rem;
+	}
 `;
 
 function App() {
-  return (
-    <Container>
-      <Inner>
-        <img className='message' src={message} />
-        <img className='lo' src={lo} />
-        <img className='trevor' src={me} />
-      </Inner>
-      <ReactHowler src={music} playing={true} loop={true} />
-    </Container>
-  );
+	return (
+		<>
+			<Container>
+				<Inner>
+					<img className="message" src={message} />
+					<img className="lo" src={lo} />
+					<img className="trevor" src={me} />
+				</Inner>
+				<ReactHowler src={music} playing={true} loop={true} />
+			</Container>
+			<WhatHaveIDone>
+				<BieberBox>
+					<p>Birthday Girl --></p>
+					<img src={bieber} alt="biebz" className="bieber" />
+					<img src={lauren} alt="bday lo" className="satan" />
+				</BieberBox>
+			</WhatHaveIDone>
+		</>
+	);
 }
 
 export default App;
