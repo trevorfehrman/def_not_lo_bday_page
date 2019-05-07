@@ -118,10 +118,10 @@ function App() {
           <img src={bieber} alt='biebz' className='bieber' />
           <img src={lauren} alt='bday lo' className='satan' />
         </BieberBox>
-      </WhatHaveIDone>
-      <GirlPower>
+			</WhatHaveIDone>
+			<GirlPower>
           <p>Girl Rules --></p>
-          <img src={girlPower} alt='biebz' />
+          <img src={girlPower} alt='girlPower' />
       </GirlPower>
     </>
   );
