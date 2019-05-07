@@ -80,6 +80,7 @@ const Inner = styled.div`
 	.message {
 		position: relative;
 		top: -40rem;
+		width: 100%;
 	}
 `;
 
