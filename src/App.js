@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
+=======
+import React from 'react';
+>>>>>>> 3f05e707e64ff24f5eba26ad51dad91e8ae0eae6
 import styled from 'styled-components';
 import ReactHowler from 'react-howler';
 import useWindowScrollPosition from '@rehooks/window-scroll-position';
@@ -9,9 +13,10 @@ import me from './assets/me.png';
 import message from './assets/bdaytext.png';
 import music from './assets/Jurassic Park - Main Theme.mp3';
 
-import bieber from './assets/satan_bday.png';
+import bieber from './assets/bieber.png';
 import stage from './assets/bg.jpeg';
-import lauren from './assets/lauren.png';
+import lauren from './assets/bday_lauren.png';
+import wdym from './assets/wutdoyumean.mp3';
 
 const Container = styled.div`
   height: 100vh;
@@ -32,6 +37,7 @@ const WhatHaveIDone = styled.div`
 `;
 
 const BieberBox = styled.div`
+<<<<<<< HEAD
   display: flex;
 
   .bieber {
@@ -57,6 +63,32 @@ const BieberBox = styled.div`
     top: 55rem;
     left: 2.5rem;
   }
+=======
+	display: flex;
+
+	.bieber {
+		position: absolute;
+		width: 50%;
+		height: auto;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.satan {
+		position: absolute;
+		top: 30rem;
+		width: 35%;
+		height: 55%;
+	}
+
+	p {
+		color: white;
+		position: absolute;
+		top: 60rem;
+		left: 5rem;
+	}
+>>>>>>> 3f05e707e64ff24f5eba26ad51dad91e8ae0eae6
 `;
 
 const Inner = styled.div`
