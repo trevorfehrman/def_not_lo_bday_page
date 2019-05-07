@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import ReactHowler from 'react-howler';
 import useWindowScrollPosition from '@rehooks/window-scroll-position';
@@ -15,71 +15,71 @@ import lauren from './assets/bday_lauren.png';
 import wdym from './assets/wutdoyumean.mp3';
 
 const Container = styled.div`
-  height: 100vh;
-  width: 100vw;
-  background-image: url(${jungle});
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+	height: 100vh;
+	width: 100vw;
+	background-image: url(${jungle});
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 `;
 
 const WhatHaveIDone = styled.div`
-  height: 150vh;
-  width: 100vw;
-  background-image: url(${stage});
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+	height: 150vh;
+	width: 100vw;
+	background-image: url(${stage});
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 `;
 
 const BieberBox = styled.div`
-  display: flex;
+	display: flex;
 
-  .bieber {
-    position: absolute;
-    width: 50%;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+	.bieber {
+		position: absolute;
+		width: 50%;
+		height: auto;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 
-  .satan {
-    position: absolute;
-    top: 30rem;
-    width: 35%;
-    height: 55%;
-  }
+	.satan {
+		position: absolute;
+		top: 30rem;
+		width: 35%;
+		height: 55%;
+	}
 
-  p {
-    color: white;
-    position: absolute;
-    top: 60rem;
-    left: 5rem;
-  }
+	p {
+		color: white;
+		position: absolute;
+		top: 60rem;
+		left: 5rem;
+	}
 `;
 
 const Inner = styled.div`
-  display: flex;
+	display: flex;
 
-  .trevor {
-    width: 75%;
-    height: 75%;
-    position: absolute;
-    right: 2rem;
-    bottom: 0;
-  }
+	.trevor {
+		width: 75%;
+		height: 75%;
+		position: absolute;
+		right: 2rem;
+		bottom: 0;
+	}
 
-  .lo {
-    position: absolute;
-    left: 4rem;
-    bottom: 0;
-  }
+	.lo {
+		position: absolute;
+		left: 4rem;
+		bottom: 0;
+	}
 
-  .message {
-    position: relative;
-    top: -40rem;
-  }
+	.message {
+		position: relative;
+		top: -40rem;
+	}
 `;
 
 function App() {
